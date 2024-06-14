@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.OTPFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbOtpFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_yellow"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Otp Verification"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.30dp"
+        android:background="#DAD4D4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbOtpFragment"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="78.00dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="13.00dp"
+        android:text="We have sent a  verification code to your phone number"
+
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="+91"
+                />
+
+            <TextView
+                android:id="@+id/tvUserNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text=""
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_marginTop="26.00dp"
+            android:layout_marginHorizontal="10.40dp"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="19.50dp"
+                app:boxCornerRadiusBottomStart="19.50dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopEnd="19.50dp"
+                app:boxCornerRadiusTopStart="19.50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5.20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58.50dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginHorizontal="26.00dp"
+            android:backgroundTint="@color/blue"
+            android:text="Login"
+            android:textAllCaps="false"
+            app:cornerRadius="10.40dp"
+            />
+
+
+
+</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context="com.myandroid.blinkitclone.auth.SplashFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+
+      <LinearLayout
+          android:id="@+id/textContainer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_above="@+id/indiaLstTxt"
+          android:layout_centerInParent="true">
+
+
+      <TextView
+          android:id="@+id/blinkTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="blinkit"
+
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="89sp"
+          android:layout_centerInParent="true"
+          />
+      <TextView
+          android:id="@+id/itTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="it"
+          android:textColor="#83D622"
+          android:textStyle="bold"
+          android:layout_toRightOf="@+id/blinkTxt"
+          android:textSize="89sp"
+          android:layout_above="@+id/indiaLstTxt"
+          android:layout_centerInParent="true"
+          android:layout_marginEnd="22dp"
+          />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/indiaLstTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="@string/india_s_last_minute_app"
+          android:textColor="@color/black"
+          android:layout_centerHorizontal="true"
+          android:textSize="22sp" />
+
+      <View
+          android:id="@+id/bline1View"
+          android:layout_width="300dp"
+          android:layout_height="4dp"
+          android:background="#100D0D"
+          android:layout_below="@+id/indiaLstTxt"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="12dp"
+          />
+
+
+      <TextView
+          android:id="@+id/zcompanyLstTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/bline1View"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="12dp"
+          android:text="A ZOMATO COMPANY"
+          android:layout_centerHorizontal="true"
+          android:textColor="@color/black"
+          android:textSize="22sp" />
+
+
+
+
+  </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
